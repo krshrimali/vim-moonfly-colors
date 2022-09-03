@@ -36,11 +36,13 @@ let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', v:true)
 let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', v:false)
 
 " By default do display vertical split columns.
-let g:moonflyWinSeparator = get(g:, 'moonflyWinSeparator', 1)
+" let g:moonflyWinSeparator = get(g:, 'moonflyWinSeparator', 1)
 
 " Background and foreground
-let s:black     = {"hex": '#080808', "term": 232}
-let s:white     = {"hex": '#c6c6c6', "term": 251}
+" let s:black     = {"hex": '#080808', "term": 232}
+let s:black     = {"hex": '#000000', "term": 232}
+" let s:white     = {"hex": '#c6c6c6', "term": 251}
+let s:white     = {"hex": '#ffffff', "term": 251}
 " Variations of charcoal-grey
 let s:grey0     = {"hex": '#323437', "term": 0  }
 let s:grey254   = {"hex": '#e4e4e4', "term": 254}
@@ -241,13 +243,13 @@ exec 'highlight TablineSelSymbol ctermbg=' . s:grey234.term . ' ctermfg=' . s:em
 exec 'highlight TablineFill ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey236.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey236.hex . ' gui=none'
 exec 'highlight StatusLineTerm ctermbg=' . s:grey236.term . ' ctermfg=' . s:white.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:white.hex . ' gui=none'
 exec 'highlight StatusLineTermNC ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex . ' gui=none'
-if g:moonflyWinSeparator == 0
-    exec 'highlight VertSplit ctermbg=' . s:black.term . ' ctermfg=' . s:black.term . ' cterm=none guibg=' . s:black.hex . ' guifg=' . s:black.hex . ' gui=none'
-elseif g:moonflyWinSeparator == 1
-    exec 'highlight VertSplit ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey236.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey236.hex . ' gui=none'
-else
-    exec 'highlight VertSplit ctermbg=NONE ctermfg=' . s:grey236.term . ' cterm=none guibg=NONE guifg=' . s:grey236.hex . ' gui=none'
-end
+" if g:moonflyWinSeparator == 0
+"     exec 'highlight VertSplit ctermbg=' . s:black.term . ' ctermfg=' . s:black.term . ' cterm=none guibg=' . s:black.hex . ' guifg=' . s:black.hex . ' gui=none'
+" elseif g:moonflyWinSeparator == 1
+"     exec 'highlight VertSplit ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey236.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey236.hex . ' gui=none'
+" else
+"     exec 'highlight VertSplit ctermbg=NONE ctermfg=' . s:grey236.term . ' cterm=none guibg=NONE guifg=' . s:grey236.hex . ' gui=none'
+" end
 
 " Visual selection
 highlight! link Visual MoonflyVisual
@@ -321,12 +323,12 @@ if has('nvim')
     if g:moonflyNormalFloat
         exec 'highlight NormalFloat ctermbg=bg ctermfg=' . s:grey249.term . ' guibg=bg guifg=' . s:grey249.hex
     else
-        exec 'highlight NormalFloat ctermbg=' . s:grey234.term . ' ctermfg=fg guibg=' . s:grey234.hex . ' guifg=fg'
+        exec 'highlight NormalFloat ctermbg=' . s:grey234.term . ' ctermfg=fg guibg=' . s:black.hex . ' guifg=fg'
     endif
     exec 'highlight FloatBorder ctermbg=bg ctermfg=' . s:grey236.term . ' guibg=bg guifg=' . s:grey236.hex
-    exec 'highlight WinBar ctermbg=' . s:grey235.term . '  ctermfg=' . s:white.term . ' cterm=none guibg=' . s:grey235.hex . ' guifg=' . s:white.hex . ' gui=none'
-    exec 'highlight WinBarNC ctermbg=' . s:grey235.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey235.hex . ' guifg=' . s:grey247.hex . ' gui=none'
-    highlight! link WinSeparator VertSplit
+    exec 'highlight WinBar ctermbg=' . s:black.term . '  ctermfg=' . s:white.term . ' cterm=none guibg=' . s:black.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight WinBarNC ctermbg=' . s:black.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:black.hex . ' guifg=' . s:grey247.hex . ' gui=none'
+    " highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
     highlight! link TSAnnotation MoonflyViolet
