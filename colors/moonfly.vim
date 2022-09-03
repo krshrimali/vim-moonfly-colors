@@ -262,11 +262,11 @@ exec 'highlight ErrorMsg ctermbg=bg ctermfg=' . s:red.term . ' guibg=bg guifg=' 
 exec 'highlight WarningMsg ctermbg=bg ctermfg=' . s:orange.term . ' guibg=bg guifg=' . s:orange.hex
 
 " Auto-text-completion menu
-exec 'highlight Pmenu ctermbg=' . s:grey235.term . ' ctermfg=fg guibg=' . s:grey235.hex . ' guifg=fg'
-exec 'highlight PmenuSel ctermbg=' . s:spring.term . ' ctermfg=' . s:grey254.term . ' guibg=' . s:spring.hex . ' guifg=' . s:grey254.hex
-exec 'highlight PmenuSbar ctermbg=' . s:grey235.term . ' guibg=' . s:grey235.hex
-exec 'highlight PmenuThumb ctermbg=' . s:grey244.term . ' guibg=' . s:grey244.hex
-exec 'highlight WildMenu ctermbg=' . s:spring.term . ' ctermfg=' . s:grey254.term . ' guibg=' . s:spring.hex . ' guifg=' . s:grey254.hex
+exec 'highlight Pmenu ctermbg=' . s:grey235.term . ' ctermfg=fg guibg=' . s:black.hex . ' guifg=fg'
+exec 'highlight PmenuSel ctermbg=' . s:spring.term . ' ctermfg=' . s:black.term . ' guibg=' . s:spring.hex . ' guifg=' . s:grey254.hex
+exec 'highlight PmenuSbar ctermbg=' . s:grey235.term . ' guibg=' . s:black.hex
+exec 'highlight PmenuThumb ctermbg=' . s:grey244.term . ' guibg=' . s:black.hex
+exec 'highlight WildMenu ctermbg=' . s:spring.term . ' ctermfg=' . s:grey254.term . ' guibg=' . s:black.hex . ' guifg=' . s:grey254.hex
 
 " Spelling errors
 if g:moonflyUndercurls
