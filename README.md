@@ -3,10 +3,13 @@
 
 ## NOTE
 
-This is a fork of the original theme, where the background is pure black, and foreground is pure white. Backgrounds of floating windows, etc. have been fixed accordingly. See the screenshot below:
+This is a fork of the original theme, where the background is pure black, and foreground is pure white. Backgrounds of floating windows, etc. have been fixed accordingly. See the screenshots below:
 
 ![image](https://user-images.githubusercontent.com/19997320/188319555-4e77cfe3-d53d-40b1-bdb4-22ab8e99f35f.png)
 
+![image](https://user-images.githubusercontent.com/19997320/188319630-28821ae6-8278-4e3b-8b68-1953cdbf3f6f.png)
+
+I like the winbar as pure black, transparent, so that's what I've chosen.
 
 _moonfly_ is a dark colorscheme for Vim & Neovim.
 
