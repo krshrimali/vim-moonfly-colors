@@ -1,6 +1,3 @@
-![moonfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/moonfly.png)
-==========
-
 ## NOTE
 
 This is a fork of the original theme, where the background is pure black, and foreground is pure white. Backgrounds of floating windows, etc. have been fixed accordingly. See the screenshots below:
