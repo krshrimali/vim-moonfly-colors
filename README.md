@@ -1,16 +1,18 @@
 ![moonfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/moonfly.png)
 ==========
 
+## NOTE
+
+This is a fork of the original theme, where the background is pure black, and foreground is pure white. Backgrounds of floating windows, etc. have been fixed accordingly. See the screenshot below:
+
+![image](https://user-images.githubusercontent.com/19997320/188319555-4e77cfe3-d53d-40b1-bdb4-22ab8e99f35f.png)
+
+
 _moonfly_ is a dark colorscheme for Vim & Neovim.
 
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
 interest.
-
-Screenshot
-----------
-
-![screenshot](https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/moonfly-screenshot.png)
 
 Styled Features & Plugins
 -------------------------
